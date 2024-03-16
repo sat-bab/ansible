@@ -1,0 +1,9 @@
+---
+- name: Remove .ssh file in /home/secadmin/
+  hosts: WORKING
+  tasks:
+    - name: Remove .ssh file
+      file:
+        path: /home/secadmin/.ssh
+        state: absent
+

@@ -1,0 +1,8 @@
+---
+- name: Public key is deployed to managed hosts for Ansible
+  hosts: INHOUSE
+  tasks:
+    - name: Ensure key is in secadmin's ~/.ssh/authorized_hosts
+      copy:
+        src: /home/secadmin/.ssh/id_rsa.pub
+        dest: /home/secadmin/.ssh/id_rsa.pub

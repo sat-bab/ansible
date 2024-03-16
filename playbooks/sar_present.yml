@@ -1,0 +1,13 @@
+---
+- name: Check and Install sar package
+  hosts: WORKING
+  tasks:
+    - name: sar package present
+      yum: 
+        name: sysstat
+        state: present
+    - name: sar is started
+      service:
+        name: sysstat
+        state: started
+        enabled: true

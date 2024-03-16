@@ -1,0 +1,12 @@
+---
+- name: Entering comment in /etc/hosts
+  hosts: LOCAL
+  remote_user: secadmin
+  become: yes
+
+  tasks:
+    - name: entering comment in /etc/hosts
+      lineinfile:
+        path: /etc/hosts
+        line: "######################"
+        state: present
