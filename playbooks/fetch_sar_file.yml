@@ -1,0 +1,10 @@
+---
+- name: Get a specific file from remote hosts
+  hosts: REACHABLE
+  become: false
+  tasks:
+    - name: Fetch file from remote host
+      fetch:
+        src: /var/log/sa/sa19
+        dest: "/home/secadmin/sar/outputs/{{ ansible_hostname }}_file.txt"
+        flat: yes

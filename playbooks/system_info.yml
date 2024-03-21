@@ -1,0 +1,14 @@
+---
+- name: Write system information to a file
+  hosts: REACHABLE  # Run on the Ansible control node
+  become: false
+  remote_user: secadmin
+  gather_facts: yes
+  tasks:
+    - name: Gather Facts
+      setup:
+
+    - name: Generate system info file
+      template:
+        src: system_info_template.j2  # Path to the Jinja2 template file
+        dest: /home/secadmin/system_info.txt

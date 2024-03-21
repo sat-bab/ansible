@@ -1,0 +1,33 @@
+#!/bin/bash
+
+DIR="/home/secadmin/sar/"
+DATE1=`date '+%Y%m%d%H%M%S'`
+DATE2=`date '+%Y%m%d'`
+HOST=`hostname`
+
+echo "--------------------------------------------------------------------------"	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"  > "$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "--------------------------------------------------------------------------"	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "RESOURCE UTIL IN "$HOST" ON "$DATE2" FROM 09:00 AM  TO 06:00 PM"	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "--------------------------------------------------------------------------"	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "--------------------------------------------------------------------------"	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"																		>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "CPU UTIL"														    >>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+sar -u -s 09:00:00 -e 18:00:00 | grep -v Average | tail -n +4 | awk '{total+=$4; if ($4 > max) max=$4; if (min==""){min=max=$4} else if ($4<min) min=$4} END {printf "Average CPU Utilization: %2.2f%%\n", total/NR"%"; print "Maximum CPU Utilization:", max"%"; print "Minimum CPU Utilization:", min"%"}' >>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"	 																	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "---------------------------------------"									>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"																		>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "MEMORY UTIL"																>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+sar -r -s 09:00:00 -e 18:00:00 | grep -v Average | tail -n +4 | awk '{total+=$6; if ($6 > max) max=$6; if (min==""){min=max=$6} else if ($6<min) min=$6} END {printf "Average Memory Utilization: %2.2f%%\n", total/NR"%"; print "Maximum Memory Utilization:", max"%"; print "Minimum Memory Utilization:", min"%"}' >>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"	 																	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "---------------------------------------"									>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"																		>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "I/O TRANSACTIONS"																>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+sar -b -s 09:00:00 -e 18:00:00 | grep -v Average | tail -n +4 | awk '{total+=$3; if ($3 > max) max=$3; if (min==""){min=max=$3} else if ($3<min) min=$3} END {print "Average I/O Transactions:", total/NR; print "Maximum I/O Transactions:", max; print "Minimum I/O Transactions:", min}' >>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"	 																	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "---------------------------------------"									>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"																		>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "LOAD (RUN QUEUE)"																>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+sar -q -s 09:00:00 -e 18:00:00 | grep -v Average | tail -n +4 | awk '{total+=$3; if ($3 > max) max=$3; if (min==""){min=max=$3} else if ($3<min) min=$3} END {print "Average LOAD (RUN QUEUE):", total/NR; print "Maximum LOAD (RUN QUEUE):", max; print "Minimum LOAD (RUN QUEUE):", min}' >>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"	 																	>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+echo "---------------------------------------"									>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"
+#echo "	"																		>>	"$DIR""$HOST"_RES_UTIL_"$DATE2"

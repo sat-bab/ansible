@@ -1,0 +1,11 @@
+{% for host in ansible_play_hosts %}
+Host: {{ host }}
+Hostname: {{ hostvars[host].ansible_hostname }}
+IP Address: {{ hostvars[host].ansible_default_ipv4.address }}
+OS Version: {{ hostvars[host].ansible_distribution }} {{ hostvars[host].ansible_distribution_version }}
+CPU Count: {{ hostvars[host].ansible_processor_cores }}
+Memory: {{ hostvars[host].ansible_memtotal_mb }} MB
+Swap: {{ hostvars[host].ansible_swaptotal_mb }} MB
+Kernel Version: {{ hostvars[host].ansible_kernel }}
+{% endfor %}
+

@@ -1,0 +1,53 @@
+---
+ - name: Enable internet services
+   hosts: LOCAL
+   become: yes
+   tasks:
+     - name: Latest version of all required packages
+       yum:
+         name:
+           - firewalld
+           - httpd
+           - mariadb-server
+           - php
+           - php-mysqlnd
+         state: latest
+
+     - name: firewalld enabled and running
+       service:
+         name: firewalld
+         enabled: true
+         state: started
+
+     - name: firewalld permits http service
+       firewalld:
+         service: http
+         permanent: true
+         state: enabled
+         immediate: yes
+
+     - name: httpd enabled and running
+       service:
+         name: httpd
+         enabled: true
+         state: started
+
+     - name: mariadb enabled and running
+       service:
+         name: mariadb
+         enabled: true
+         state: started 
+
+     - name: test php page is installed
+       template:
+         src: tutorial.firstpage.php
+         dest: /var/www/html/index.php
+ 
+ - name: Test internet webserver
+   hosts: LOCAL
+   become: no
+   tasks:
+     - name: connect to internet webserver
+       uri:
+         url: http://localhost
+         status_code: 200

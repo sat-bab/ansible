@@ -1,0 +1,15 @@
+---
+- name: Postfix and Davecot are running
+  hosts: LOCAL
+  vars:
+    mail_services:
+      - postfix
+      - dovecot
+      - httpd
+  tasks:
+    - name: Postfix and Davecot are running
+      service:
+        name: "{{ item }}"
+        state: started
+      loop: "{{ mail_services }}"
+              

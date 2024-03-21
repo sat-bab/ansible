@@ -1,0 +1,409 @@
+Host: 10.201.217.52
+Hostname: RA_FTP
+IP Address: 10.201.217.52
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 31845 MB
+Swap: 16127 MB
+Kernel Version: 4.18.0-513.11.1.el8_9.x86_64
+Host: 10.201.217.53
+Hostname: raportal
+IP Address: 10.201.217.53
+OS Version: RedHat 9.0
+CPU Count: 1
+Memory: 15734 MB
+Swap: 49151 MB
+Kernel Version: 5.14.0-70.22.1.el9_0.x86_64
+Host: 10.201.217.41
+Hostname: ONENOCWEB
+IP Address: 10.201.217.41
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15700 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.42
+Hostname: ONENOCAPI
+IP Address: 10.201.217.42
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 31804 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.43
+Hostname: ONENOCDB
+IP Address: 10.201.217.43
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15700 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.44
+Hostname: ONENOCPEG
+IP Address: 10.201.217.44
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15700 MB
+Swap: 32783 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.45
+Hostname: ONENOCVCSW
+IP Address: 10.201.217.45
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15693 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.46
+Hostname: ONENOCVCAPP
+IP Address: 10.201.217.46
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15693 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.61
+Hostname: BID
+IP Address: 10.201.217.61
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 257380 MB
+Swap: 16383 MB
+Kernel Version: 4.18.0-513.9.1.el8_9.x86_64
+Host: 10.201.217.62
+Hostname: CAFC
+IP Address: 10.201.217.62
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 15800 MB
+Swap: 16383 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.70
+Hostname: QRCODE01
+IP Address: 10.201.217.70
+OS Version: RedHat 9.2
+CPU Count: 1
+Memory: 31804 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.82
+Hostname: auasdchyd
+IP Address: 10.201.217.82
+OS Version: RedHat 9.0
+CPU Count: 1
+Memory: 31814 MB
+Swap: 131067 MB
+Kernel Version: 5.14.0-70.22.1.el9_0.x86_64
+Host: 10.201.217.5
+Hostname: APEXDB
+IP Address: 10.201.217.5
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 64120 MB
+Swap: 20479 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.69
+Hostname: BRDLTR069
+IP Address: 10.201.217.69
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 31797 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.65
+Hostname: ALTTC
+IP Address: 10.201.217.65
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 128521 MB
+Swap: 15259 MB
+Kernel Version: 4.18.0-372.32.1.el8_6.x86_64
+Host: 10.201.217.72
+Hostname: ITPCPUNE01
+IP Address: 10.201.217.72
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 31797 MB
+Swap: 65535 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.73
+Hostname: ITPCPUNE02
+IP Address: 10.201.217.73
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 31797 MB
+Swap: 65535 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.9
+Hostname: OORJHAAPP
+IP Address: 10.201.217.9
+OS Version: RedHat 9.0
+CPU Count: 8
+Memory: 15735 MB
+Swap: 16383 MB
+Kernel Version: 5.14.0-70.22.1.el9_0.x86_64
+Host: 10.201.217.71
+Hostname: QRCODE02
+IP Address: 10.201.217.71
+OS Version: RedHat 9.2
+CPU Count: 1
+Memory: 15700 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.51
+Hostname: RA_DB
+IP Address: 10.201.217.51
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 31928 MB
+Swap: 16127 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.220.4
+Hostname: IVRS
+IP Address: 10.201.220.4
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15700 MB
+Swap: 0 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.220.5
+Hostname: ivrsportal
+IP Address: 10.201.220.5
+OS Version: RedHat 7.9
+CPU Count: 1
+Memory: 31993 MB
+Swap: 16127 MB
+Kernel Version: 3.10.0-1160.el7.x86_64
+Host: 10.201.220.6
+Hostname: IVRSDB
+IP Address: 10.201.220.6
+OS Version: RedHat 9.0
+CPU Count: 1
+Memory: 31814 MB
+Swap: 16383 MB
+Kernel Version: 5.14.0-70.22.1.el9_0.x86_64
+Host: 10.201.220.16
+Hostname: VM-CLUS2
+IP Address: 10.201.220.16
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 7683 MB
+Swap: 8083 MB
+Kernel Version: 4.18.0-513.11.1.el8_9.x86_64
+Host: 10.201.220.25
+Hostname: ATDPORTAL
+IP Address: 10.201.220.25
+OS Version: RedHat 9.3
+CPU Count: 16
+Memory: 31837 MB
+Swap: 65535 MB
+Kernel Version: 5.14.0-70.22.1.el9_0.x86_64
+Host: 10.201.217.99
+Hostname: KannelP1
+IP Address: 10.201.217.99
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 47973 MB
+Swap: 37887 MB
+Kernel Version: 4.18.0-513.18.1.el8_9.x86_64
+Host: 10.201.220.31
+Hostname: ONENOCWEBEZ
+IP Address: 10.201.220.31
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15705 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.24.1.el9_3.x86_64
+Host: 10.201.220.32
+Hostname: ONENOCAPIEZ
+IP Address: 10.201.220.32
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 31797 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.220.33
+Hostname: ONENOCDBEZ
+IP Address: 10.201.220.33
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15693 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.220.34
+Hostname: ONENOCPEGEZ
+IP Address: 10.201.220.34
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15693 MB
+Swap: 32783 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.220.35
+Hostname: ONENOCVCSWEZ
+IP Address: 10.201.220.35
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15705 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.24.1.el9_3.x86_64
+Host: 10.201.220.36
+Hostname: ONENOCVCAPPEZ
+IP Address: 10.201.220.36
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 15693 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.220.1
+Hostname: DCPD21IVRS198-01V
+IP Address: 10.201.220.1
+OS Version: RedHat 7.9
+CPU Count: 1
+Memory: 120706 MB
+Swap: 16379 MB
+Kernel Version: 3.10.0-1160.88.1.el7.x86_64
+Host: 10.201.220.2
+Hostname: DCPD21IVRSACD02V
+IP Address: 10.201.220.2
+OS Version: RedHat 8.0
+CPU Count: 1
+Memory: 37036 MB
+Swap: 12391 MB
+Kernel Version: 4.18.0-80.el8.x86_64
+Host: 10.201.220.3
+Hostname: DCPD21IVRSTST03V
+IP Address: 10.201.220.3
+OS Version: RedHat 7.9
+CPU Count: 1
+Memory: 15884 MB
+Swap: 8063 MB
+Kernel Version: 3.10.0-1160.el7.x86_64
+Host: 10.201.220.20
+Hostname: dnd
+IP Address: 10.201.220.20
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 31952 MB
+Swap: 16383 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.98
+Hostname: KannelP2
+IP Address: 10.201.217.98
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 47973 MB
+Swap: 37887 MB
+Kernel Version: 4.18.0-513.18.1.el8_9.x86_64
+Host: 10.201.217.74
+Hostname: ITPCPUNE03
+IP Address: 10.201.217.74
+OS Version: RedHat 9.2
+CPU Count: 1
+Memory: 15700 MB
+Swap: 32767 MB
+Kernel Version: 5.14.0-284.30.1.el9_2.x86_64
+Host: 10.201.217.12
+Hostname: AIPWEBFRBD
+IP Address: 10.201.217.12
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 47889 MB
+Swap: 0 MB
+Kernel Version: 5.14.0-362.24.1.el9_3.x86_64
+Host: 10.201.217.13
+Hostname: AIPWEBAHMD1
+IP Address: 10.201.217.13
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 23733 MB
+Swap: 0 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.16
+Hostname: OLTPDB
+IP Address: 10.201.217.16
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 63749 MB
+Swap: 20479 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.19
+Hostname: REV1CYMN1
+IP Address: 10.201.217.19
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 31928 MB
+Swap: 16383 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.21
+Hostname: Epay_DB
+IP Address: 10.201.217.21
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 64120 MB
+Swap: 32767 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.26
+Hostname: EBPORTAL_Web
+IP Address: 10.201.217.26
+OS Version: RedHat 8.9
+CPU Count: 1
+Memory: 15745 MB
+Swap: 8191 MB
+Kernel Version: 4.18.0-513.18.1.el8_9.x86_64
+Host: 10.201.217.14
+Hostname: AIPWEBAHMD2
+IP Address: 10.201.217.14
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 23733 MB
+Swap: 8183 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.15
+Hostname: AIPWEBAHMD3
+IP Address: 10.201.217.15
+OS Version: RedHat 9.3
+CPU Count: 1
+Memory: 23733 MB
+Swap: 8183 MB
+Kernel Version: 5.14.0-362.18.1.el9_3.x86_64
+Host: 10.201.217.17
+Hostname: DWH_DB
+IP Address: 10.201.217.17
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 48056 MB
+Swap: 37887 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.18
+Hostname: OLTP_DR
+IP Address: 10.201.217.18
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 48056 MB
+Swap: 32767 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.22
+Hostname: TEEVRADB
+IP Address: 10.201.217.22
+OS Version: RedHat 9.3
+CPU Count: 16
+Memory: 31837 MB
+Swap: 16383 MB
+Kernel Version: 5.14.0-362.24.1.el9_3.x86_64
+Host: 10.201.217.23
+Hostname: FTTH_BKP
+IP Address: 10.201.217.23
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 31928 MB
+Swap: 16127 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+Host: 10.201.217.24
+Hostname: EBPORTAL_DB
+IP Address: 10.201.217.24
+OS Version: RedHat 8.6
+CPU Count: 1
+Memory: 31928 MB
+Swap: 16383 MB
+Kernel Version: 4.18.0-372.9.1.el8.x86_64
+

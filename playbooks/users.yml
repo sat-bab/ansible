@@ -1,0 +1,13 @@
+---
+- name: create user account for all servers
+  hosts: LOCAL
+  become: true
+  remote_user: secadmin
+  vars_files:
+    - secret.yml
+  tasks:
+    - name: creating user from secret.yml
+      user:
+        name: "{{username}}"
+        password: "{{pwhash}}"
+        state: present

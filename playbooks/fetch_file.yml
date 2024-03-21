@@ -1,0 +1,16 @@
+---
+- name: Get a specific file from remote hosts
+  hosts: WORKING
+  become: false
+  tasks:
+    - name: Fetch file from remote hosts
+      shell: ls /home/secadmin/sar/*20240320
+      register: remote_files
+      ignore_errors: true  #ignore error if no files matched
+    - name: Fetch matched files from remote hosts
+      fetch:
+        src: "{{ item }}"
+        dest: /home/secadmin/sar/outputs/
+        flat: yes
+      loop: "{{ remote_files.stdout_lines }}"
+      when: remote_files.stdout_lines is defined #Only execute when files are found

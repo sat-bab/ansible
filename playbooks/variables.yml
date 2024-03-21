@@ -1,0 +1,50 @@
+---
+- name: Deploy and start apache httpd webserver
+  hosts: LOCAL
+  vars:
+    web_pkg: httpd
+    fire_pkg: firewalld
+    web_serv: httpd
+    fire_serv: firewalld
+    py_pkg: python3-PyMySQL
+    rule: http
+  tasks:
+    - name: Required packages are installed and up to date
+      yum:
+        name:
+          - "{{web_pkg}}"
+          - "{{fire_pkg}}"
+          - "{{py_pkg}}"
+        state: latest
+    - name: The {{fire_serv}} is started and enabled
+      service:
+        name: "{{fire_serv}}"
+        enabled: true
+        state: started
+    - name: The {{web_serv}} is started and enabled
+      service:
+        name: "{{web_serv}}"
+        enabled: true
+        state: started
+    - name: Web content is in place
+      copy:
+        content: 'Example web content is in Place'
+        dest: /var/www/html/index.html
+    - name: The firewall port for {{rule}} is open
+      firewalld:
+        service: "{{rule}}"
+        permanent: true
+        immediate: true
+        state: enabled
+- name: Verify web Apache server
+  hosts: LOCAL
+  become: false
+  tasks: 
+    - name: Ensure the webserver is reachable
+      uri:
+        url: http://localhost/
+        status_code: 200
+
+
+
+

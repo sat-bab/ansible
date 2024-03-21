@@ -1,0 +1,15 @@
+---
+ - name: Install latest sysstat(sar) package and start the service
+   hosts: SAR
+   become: yes
+   tasks:
+     - name: Latest version of sysstat package
+       yum:
+         name: sysstat
+         state: latest
+
+     - name: sar enabled and running
+       service:
+         name: sysstat
+         enabled: true
+         state: started

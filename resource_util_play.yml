@@ -1,0 +1,25 @@
+---
+- name: Create a Directory, Copy the script into that Directory and run the script as cron job
+  hosts: SAR7
+  remote_user: secadmin 
+  become: false
+  tasks:
+    - name: Create a Directory
+      file:
+        path: /home/secadmin/sar
+        state: directory
+        mode: "0755"
+
+    - name: Copy script file to Directory
+      copy:
+        src: /home/secadmin/ansible/daily_report.sh
+        dest: /home/secadmin/sar/daily_report.sh
+        mode: "744"
+        force: yes
+
+    - name: Schedule cron job
+      cron:
+        name: Schedule script as cron job
+        minute: "30"
+        hour: "18"
+        job: "sh /home/secadmin/sar/daily_report.sh"
