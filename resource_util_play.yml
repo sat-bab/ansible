@@ -1,6 +1,6 @@
 ---
 - name: Create a Directory, Copy the script into that Directory and run the script as cron job
-  hosts: SAR7
+  hosts: TEMP
   remote_user: secadmin 
   become: false
   tasks:

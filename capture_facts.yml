@@ -1,0 +1,14 @@
+---
+- name: Getting Facts
+  hosts: REACHABLE
+  gather_facts: yes
+  become: false
+  remote_user: secadmin
+
+  tasks:
+    - name: Gather facts and Save facts to a file
+      ansible.builtin.copy:
+        content: "{{ ansible_facts }}"
+        dest: "/home/secadmin/ansible/ansible_facts_210324.json"
+
+
