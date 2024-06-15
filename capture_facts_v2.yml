@@ -1,0 +1,12 @@
+---
+- name: Capture facts from managed hosts
+  hosts: DMZ
+  gather_facts: yes
+  
+  tasks:
+    - name: Save facts to a local file
+      ansible.builtin.copy:
+        content: "{{ ansible_facts | to_nice_json }}"
+        dest: "/home/secadmin/ansible/facts.d/facts_{{ ansible_hostname }}_{{ ansible_date_time.date }}.json"
+      delegate_to: localhost
+

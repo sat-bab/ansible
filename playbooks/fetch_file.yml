@@ -1,10 +1,10 @@
 ---
 - name: Get a specific file from remote hosts
-  hosts: WORKING
+  hosts: REACHABLE
   become: false
   tasks:
     - name: Fetch file from remote hosts
-      shell: ls /home/secadmin/sar/*20240320
+      shell: ls /home/secadmin/sar/*20240322.txt
       register: remote_files
       ignore_errors: true  #ignore error if no files matched
     - name: Fetch matched files from remote hosts

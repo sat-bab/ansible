@@ -9,6 +9,5 @@
     - name: Gather facts and Save facts to a file
       ansible.builtin.copy:
         content: "{{ ansible_facts }}"
-        dest: "/home/secadmin/ansible/ansible_facts_210324.json"
-
-
+        dest: "/home/secadmin/systeminfo/{{ inventory_hostname }}"
+      delegate_to: localhost

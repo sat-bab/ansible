@@ -1,0 +1,6 @@
+- name: Test WinRM connection
+  hosts: WINTEST
+  tasks:
+    - name: Run ipconfig
+      win_command: ipconfig
+

@@ -1,0 +1,2142 @@
+{
+    "_ansible_facts_gathered": true,
+    "all_ipv4_addresses": [
+        "10.201.217.22"
+    ],
+    "all_ipv6_addresses": [
+        "fe80::250:56ff:feb3:b244"
+    ],
+    "ansible_local": {},
+    "apparmor": {
+        "status": "disabled"
+    },
+    "architecture": "x86_64",
+    "bios_date": "11/21/2022",
+    "bios_vendor": "VMware, Inc.",
+    "bios_version": "VMW201.00V.20829224.B64.2211211842",
+    "board_asset_tag": "NA",
+    "board_name": "440BX Desktop Reference Platform",
+    "board_serial": "None",
+    "board_vendor": "Intel Corporation",
+    "board_version": "None",
+    "chassis_asset_tag": "No Asset Tag",
+    "chassis_serial": "None",
+    "chassis_vendor": "No Enclosure",
+    "chassis_version": "N/A",
+    "cmdline": {
+        "BOOT_IMAGE": "(hd0,gpt2)/vmlinuz-5.14.0-362.24.1.el9_3.x86_64",
+        "crashkernel": "1G-4G:192M,4G-64G:256M,64G-:512M",
+        "quiet": true,
+        "rd.lvm.lv": "rhel/usr",
+        "resume": "/dev/mapper/rhel-swap",
+        "rhgb": true,
+        "ro": true,
+        "root": "/dev/mapper/rhel-root"
+    },
+    "date_time": {
+        "date": "2024-05-02",
+        "day": "02",
+        "epoch": "1714639500",
+        "epoch_int": "1714639500",
+        "hour": "14",
+        "iso8601": "2024-05-02T08:45:00Z",
+        "iso8601_basic": "20240502T141500503280",
+        "iso8601_basic_short": "20240502T141500",
+        "iso8601_micro": "2024-05-02T08:45:00.503280Z",
+        "minute": "15",
+        "month": "05",
+        "second": "00",
+        "time": "14:15:00",
+        "tz": "IST",
+        "tz_dst": "IST",
+        "tz_offset": "+0530",
+        "weekday": "Thursday",
+        "weekday_number": "4",
+        "weeknumber": "18",
+        "year": "2024"
+    },
+    "default_ipv4": {
+        "address": "10.201.217.22",
+        "alias": "ens33",
+        "broadcast": "10.201.217.255",
+        "gateway": "10.201.217.254",
+        "interface": "ens33",
+        "macaddress": "00:50:56:b3:b2:44",
+        "mtu": 1500,
+        "netmask": "255.255.255.0",
+        "network": "10.201.217.0",
+        "prefix": "24",
+        "type": "ether"
+    },
+    "default_ipv6": {},
+    "device_links": {
+        "ids": {
+            "dm-0": [
+                "dm-name-rhel-root",
+                "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcJA2t2ie4cpG2TcEIXZ5uN2Xfz2DZhElm"
+            ],
+            "dm-1": [
+                "dm-name-rhel-swap",
+                "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcjAwRo7zZ814bky1u3rYsx8hhA82bVw6N"
+            ],
+            "dm-10": [
+                "dm-name-TEEVRA_DB_vg01-lvol13",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6a7ow3aQQ47dE6ZV3ZMDepycpFIJ2FwR9"
+            ],
+            "dm-11": [
+                "dm-name-TEEVRA_DB_vg01-lvol18",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6KLy3pJ1OUUj73xfBDReL2GyheKd8vRzz"
+            ],
+            "dm-12": [
+                "dm-name-TEEVRA_DB_vg01-lvol2",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6SvJZAUsyWp3ZJWiybxKqZB7d4M4lZHZB"
+            ],
+            "dm-13": [
+                "dm-name-TEEVRA_DB_vg01-lvol17",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6eUVzDmwFJIl35m2DGffmlnfr9eF39O6t"
+            ],
+            "dm-14": [
+                "dm-name-TEEVRA_DB_vg01-lvol7",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw67pdWp5ERhUokhEdE89muLdd3FsnUQkkT"
+            ],
+            "dm-15": [
+                "dm-name-TEEVRA_DB_vg01-lvol4",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw67YHc68d7o3vtBIFFK9RQTW72c3KyNutr"
+            ],
+            "dm-16": [
+                "dm-name-TEEVRA_DB_vg01-lvol1",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6NEgRgU5MpUKT8BISAZVWiY7hObMd32BN"
+            ],
+            "dm-17": [
+                "dm-name-TEEVRA_DB_vg01-lvol14",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6rauNBuZwW6AEh6PPolrHfPVrJJS9ZEY2"
+            ],
+            "dm-18": [
+                "dm-name-TEEVRA_DB_vg01-lvol12",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw60a3P3MJDrSTu06SMgpkIZaRCkP1rVl3B"
+            ],
+            "dm-19": [
+                "dm-name-TEEVRA_DB_vg01-lvol6",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6uAWZJwSzQdgbRgugvjGJCulMldXGU8Gv"
+            ],
+            "dm-2": [
+                "dm-name-rhel-usr",
+                "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcFfJN16a1KgINP9pHL71ZwhHUF7FSclN0"
+            ],
+            "dm-20": [
+                "dm-name-TEEVRA_DB_vg01-lvol11",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6ysZTEXJO4QGL6o2cEHTIpSUGYyQSQd2r"
+            ],
+            "dm-21": [
+                "dm-name-TEEVRA_DB_vg01-lvol3",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6WBVW92Fu6DCshoJpJdpPMW0y71o2U4x2"
+            ],
+            "dm-22": [
+                "dm-name-TEEVRA_DB_vg01-lvol5",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6fEuWcDhcxdbs67f466SEH5sXgya35f9r"
+            ],
+            "dm-23": [
+                "dm-name-TEEVRA_DB_vg01-lvol9",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6kd8fdIEXWUwfLkeOSihAfcw3x1eY99mu"
+            ],
+            "dm-24": [
+                "dm-name-TEEVRA_DB_vg01-lvol10",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6XEsx3RFEfn7VKo34CuldBaSQc7Xbz63E"
+            ],
+            "dm-3": [
+                "dm-name-rhel-soft",
+                "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcruLKdmxYHxzDfiI6jfN2ZAFSwz27FnDt"
+            ],
+            "dm-4": [
+                "dm-name-rhel-home",
+                "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcU2UhRE93u6VxYoVQwhtBUd8SsS5890T9"
+            ],
+            "dm-5": [
+                "dm-name-rhel-tmp",
+                "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcMWgGOPffjINpQNpEL68JD0PTXDeD7VKt"
+            ],
+            "dm-6": [
+                "dm-name-TEEVRA_DB_vg01-lvol19",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6Q598B48miwAfTxNGlKOlHx9QdEyZXJh3"
+            ],
+            "dm-7": [
+                "dm-name-TEEVRA_DB_vg01-lvol16",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw60HiqZchZ7Cr41pYZq0WNvPJbrwhA2VxM"
+            ],
+            "dm-8": [
+                "dm-name-TEEVRA_DB_vg01-lvol15",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6zsxsv0L41H97ZcTHA74Mu2SEKtC1XECh"
+            ],
+            "dm-9": [
+                "dm-name-TEEVRA_DB_vg01-lvol8",
+                "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6P5ySZKQD2V1Li0IVR9Qwb1PQlU3AFSXC"
+            ],
+            "sda3": [
+                "lvm-pv-uuid-UepE8P-d8vr-LGPR-mklF-RIBa-MKuQ-1XuSs1"
+            ],
+            "sdb": [
+                "lvm-pv-uuid-GkNC3k-DY08-SO5W-EATe-5QKt-7agO-CRZ0DU"
+            ]
+        },
+        "labels": {
+            "loop0": [
+                "HPOvOpsAgt-12.15"
+            ]
+        },
+        "masters": {
+            "sda3": [
+                "dm-0",
+                "dm-1",
+                "dm-2",
+                "dm-3",
+                "dm-4",
+                "dm-5"
+            ],
+            "sdb": [
+                "dm-10",
+                "dm-11",
+                "dm-12",
+                "dm-13",
+                "dm-14",
+                "dm-15",
+                "dm-16",
+                "dm-17",
+                "dm-18",
+                "dm-19",
+                "dm-20",
+                "dm-21",
+                "dm-22",
+                "dm-23",
+                "dm-24",
+                "dm-6",
+                "dm-7",
+                "dm-8",
+                "dm-9"
+            ]
+        },
+        "uuids": {
+            "dm-0": [
+                "5fc3cedf-6f08-414f-8e25-1453e52e0901"
+            ],
+            "dm-1": [
+                "eaac690d-d070-4606-81e5-1e54fdd202df"
+            ],
+            "dm-10": [
+                "72e47ac4-ce78-484f-a215-f0135899d592"
+            ],
+            "dm-11": [
+                "48e19a7b-1f32-4ed4-846c-3ac5f6020c36"
+            ],
+            "dm-12": [
+                "69f1be59-c844-4254-8b63-6a09b3c12a37"
+            ],
+            "dm-13": [
+                "20a5948e-c124-4c7c-bbfb-336983008b8a"
+            ],
+            "dm-14": [
+                "f8008282-83ea-4d37-9d4c-d34b7deb78b5"
+            ],
+            "dm-15": [
+                "6326272a-cb0f-462d-ba72-26265b98af3b"
+            ],
+            "dm-16": [
+                "ea10c9c2-ac69-4eab-8c82-078f0d139942"
+            ],
+            "dm-17": [
+                "552a9d35-1805-4c9c-8107-96f0c028ad7a"
+            ],
+            "dm-18": [
+                "2ff50fc3-1c66-436c-9f9a-e65485ab2bda"
+            ],
+            "dm-19": [
+                "b2219dea-5ac0-45d8-85db-21d515d438c0"
+            ],
+            "dm-2": [
+                "176c0a06-54df-49c4-8d11-0fbbe8feb8e0"
+            ],
+            "dm-20": [
+                "ba21bd8d-58f0-4cdf-b480-89860900cfeb"
+            ],
+            "dm-21": [
+                "10452518-8fe2-4689-a9d2-9f7ab91bdeee"
+            ],
+            "dm-22": [
+                "467c9978-5ca4-411f-a171-ca23da254fc6"
+            ],
+            "dm-23": [
+                "21a0621a-6710-45fa-8bae-4572ad208a03"
+            ],
+            "dm-24": [
+                "f6635d22-dce1-4c47-859d-5120fac1264c"
+            ],
+            "dm-3": [
+                "a991ba90-70bc-431f-929c-0b824a22782d"
+            ],
+            "dm-4": [
+                "381929d2-a62c-44c9-9966-f4ff3a3bc531"
+            ],
+            "dm-5": [
+                "e8ff7107-a250-4635-95fa-2212de0dccfd"
+            ],
+            "dm-6": [
+                "2ada461c-ea7b-4f24-925d-f48e50d40446"
+            ],
+            "dm-7": [
+                "6ef6a341-d532-4621-99da-d2817dd8386c"
+            ],
+            "dm-8": [
+                "8f464295-165b-449a-87c2-c5ab9396cf58"
+            ],
+            "dm-9": [
+                "d49af246-d827-43f6-a444-9223fd56d686"
+            ],
+            "loop0": [
+                "2020-10-13-05-05-58-00"
+            ],
+            "sda1": [
+                "9EBD-2C9E"
+            ],
+            "sda2": [
+                "bb137a24-767d-46d2-b78b-351970560430"
+            ]
+        }
+    },
+    "devices": {
+        "dm-0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-root",
+                    "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcJA2t2ie4cpG2TcEIXZ5uN2Xfz2DZhElm"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "5fc3cedf-6f08-414f-8e25-1453e52e0901"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "104857600",
+            "sectorsize": "512",
+            "size": "50.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-1": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-swap",
+                    "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcjAwRo7zZ814bky1u3rYsx8hhA82bVw6N"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "eaac690d-d070-4606-81e5-1e54fdd202df"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "33554432",
+            "sectorsize": "512",
+            "size": "16.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-10": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol13",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6a7ow3aQQ47dE6ZV3ZMDepycpFIJ2FwR9"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "72e47ac4-ce78-484f-a215-f0135899d592"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "157286400",
+            "sectorsize": "512",
+            "size": "75.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-11": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol18",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6KLy3pJ1OUUj73xfBDReL2GyheKd8vRzz"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "48e19a7b-1f32-4ed4-846c-3ac5f6020c36"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-12": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol2",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6SvJZAUsyWp3ZJWiybxKqZB7d4M4lZHZB"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "69f1be59-c844-4254-8b63-6a09b3c12a37"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "367001600",
+            "sectorsize": "512",
+            "size": "175.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-13": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol17",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6eUVzDmwFJIl35m2DGffmlnfr9eF39O6t"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "20a5948e-c124-4c7c-bbfb-336983008b8a"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-14": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol7",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw67pdWp5ERhUokhEdE89muLdd3FsnUQkkT"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "f8008282-83ea-4d37-9d4c-d34b7deb78b5"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "209715200",
+            "sectorsize": "512",
+            "size": "100.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-15": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol4",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw67YHc68d7o3vtBIFFK9RQTW72c3KyNutr"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "6326272a-cb0f-462d-ba72-26265b98af3b"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "314572800",
+            "sectorsize": "512",
+            "size": "150.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-16": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol1",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6NEgRgU5MpUKT8BISAZVWiY7hObMd32BN"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "ea10c9c2-ac69-4eab-8c82-078f0d139942"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "419430400",
+            "sectorsize": "512",
+            "size": "200.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-17": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol14",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6rauNBuZwW6AEh6PPolrHfPVrJJS9ZEY2"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "552a9d35-1805-4c9c-8107-96f0c028ad7a"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-18": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol12",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw60a3P3MJDrSTu06SMgpkIZaRCkP1rVl3B"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "2ff50fc3-1c66-436c-9f9a-e65485ab2bda"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "289406976",
+            "sectorsize": "512",
+            "size": "138.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-19": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol6",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6uAWZJwSzQdgbRgugvjGJCulMldXGU8Gv"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "b2219dea-5ac0-45d8-85db-21d515d438c0"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "209715200",
+            "sectorsize": "512",
+            "size": "100.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-2": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-usr",
+                    "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcFfJN16a1KgINP9pHL71ZwhHUF7FSclN0"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "176c0a06-54df-49c4-8d11-0fbbe8feb8e0"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "41943040",
+            "sectorsize": "512",
+            "size": "20.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-20": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol11",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6ysZTEXJO4QGL6o2cEHTIpSUGYyQSQd2r"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "ba21bd8d-58f0-4cdf-b480-89860900cfeb"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "209715200",
+            "sectorsize": "512",
+            "size": "100.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-21": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol3",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6WBVW92Fu6DCshoJpJdpPMW0y71o2U4x2"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "10452518-8fe2-4689-a9d2-9f7ab91bdeee"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "314572800",
+            "sectorsize": "512",
+            "size": "150.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-22": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol5",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6fEuWcDhcxdbs67f466SEH5sXgya35f9r"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "467c9978-5ca4-411f-a171-ca23da254fc6"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "331350016",
+            "sectorsize": "512",
+            "size": "158.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-23": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol9",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6kd8fdIEXWUwfLkeOSihAfcw3x1eY99mu"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "21a0621a-6710-45fa-8bae-4572ad208a03"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "209715200",
+            "sectorsize": "512",
+            "size": "100.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-24": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol10",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6XEsx3RFEfn7VKo34CuldBaSQc7Xbz63E"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "f6635d22-dce1-4c47-859d-5120fac1264c"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "209715200",
+            "sectorsize": "512",
+            "size": "100.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-3": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-soft",
+                    "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcruLKdmxYHxzDfiI6jfN2ZAFSwz27FnDt"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "a991ba90-70bc-431f-929c-0b824a22782d"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "41943040",
+            "sectorsize": "512",
+            "size": "20.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-4": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-home",
+                    "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcU2UhRE93u6VxYoVQwhtBUd8SsS5890T9"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "381929d2-a62c-44c9-9966-f4ff3a3bc531"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "150994944",
+            "sectorsize": "512",
+            "size": "72.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-5": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-rhel-tmp",
+                    "dm-uuid-LVM-jyCdrzQZbI9idOzO40eK2rqWN739H3JcMWgGOPffjINpQNpEL68JD0PTXDeD7VKt"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "e8ff7107-a250-4635-95fa-2212de0dccfd"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "41943040",
+            "sectorsize": "512",
+            "size": "20.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-6": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol19",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6Q598B48miwAfTxNGlKOlHx9QdEyZXJh3"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "2ada461c-ea7b-4f24-925d-f48e50d40446"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-7": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol16",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw60HiqZchZ7Cr41pYZq0WNvPJbrwhA2VxM"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "6ef6a341-d532-4621-99da-d2817dd8386c"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-8": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol15",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6zsxsv0L41H97ZcTHA74Mu2SEKtC1XECh"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "8f464295-165b-449a-87c2-c5ab9396cf58"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "10485760",
+            "sectorsize": "512",
+            "size": "5.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "dm-9": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [
+                    "dm-name-TEEVRA_DB_vg01-lvol8",
+                    "dm-uuid-LVM-zxhyRI0mukbjbDLIFwlMRzZbA0vi7bw6P5ySZKQD2V1Li0IVR9Qwb1PQlU3AFSXC"
+                ],
+                "labels": [],
+                "masters": [],
+                "uuids": [
+                    "d49af246-d827-43f6-a444-9223fd56d686"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "",
+            "sectors": "209715200",
+            "sectorsize": "512",
+            "size": "100.00 GB",
+            "support_discard": "1048576",
+            "vendor": null,
+            "virtual": 1
+        },
+        "loop0": {
+            "holders": [],
+            "host": "",
+            "links": {
+                "ids": [],
+                "labels": [
+                    "HPOvOpsAgt-12.15"
+                ],
+                "masters": [],
+                "uuids": [
+                    "2020-10-13-05-05-58-00"
+                ]
+            },
+            "model": null,
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "none",
+            "sectors": "1396468",
+            "sectorsize": "512",
+            "size": "681.87 MB",
+            "support_discard": "4096",
+            "vendor": null,
+            "virtual": 1
+        },
+        "sda": {
+            "holders": [],
+            "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+            "links": {
+                "ids": [],
+                "labels": [],
+                "masters": [],
+                "uuids": []
+            },
+            "model": "Virtual disk",
+            "partitions": {
+                "sda1": {
+                    "holders": [],
+                    "links": {
+                        "ids": [],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "9EBD-2C9E"
+                        ]
+                    },
+                    "sectors": "1228800",
+                    "sectorsize": 512,
+                    "size": "600.00 MB",
+                    "start": "2048",
+                    "uuid": "9EBD-2C9E"
+                },
+                "sda2": {
+                    "holders": [],
+                    "links": {
+                        "ids": [],
+                        "labels": [],
+                        "masters": [],
+                        "uuids": [
+                            "bb137a24-767d-46d2-b78b-351970560430"
+                        ]
+                    },
+                    "sectors": "2097152",
+                    "sectorsize": 512,
+                    "size": "1.00 GB",
+                    "start": "1230848",
+                    "uuid": "bb137a24-767d-46d2-b78b-351970560430"
+                },
+                "sda3": {
+                    "holders": [
+                        "rhel-swap",
+                        "rhel-home",
+                        "rhel-usr",
+                        "rhel-root",
+                        "rhel-tmp",
+                        "rhel-soft"
+                    ],
+                    "links": {
+                        "ids": [
+                            "lvm-pv-uuid-UepE8P-d8vr-LGPR-mklF-RIBa-MKuQ-1XuSs1"
+                        ],
+                        "labels": [],
+                        "masters": [
+                            "dm-0",
+                            "dm-1",
+                            "dm-2",
+                            "dm-3",
+                            "dm-4",
+                            "dm-5"
+                        ],
+                        "uuids": []
+                    },
+                    "sectors": "415252480",
+                    "sectorsize": 512,
+                    "size": "198.01 GB",
+                    "start": "3328000",
+                    "uuid": null
+                }
+            },
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "419430400",
+            "sectorsize": "512",
+            "size": "200.00 GB",
+            "support_discard": "1048576",
+            "vendor": "VMware",
+            "virtual": 1
+        },
+        "sdb": {
+            "holders": [
+                "TEEVRA_DB_vg01-lvol11",
+                "TEEVRA_DB_vg01-lvol13",
+                "TEEVRA_DB_vg01-lvol6",
+                "TEEVRA_DB_vg01-lvol15",
+                "TEEVRA_DB_vg01-lvol14",
+                "TEEVRA_DB_vg01-lvol19",
+                "TEEVRA_DB_vg01-lvol4",
+                "TEEVRA_DB_vg01-lvol9",
+                "TEEVRA_DB_vg01-lvol17",
+                "TEEVRA_DB_vg01-lvol3",
+                "TEEVRA_DB_vg01-lvol18",
+                "TEEVRA_DB_vg01-lvol8",
+                "TEEVRA_DB_vg01-lvol12",
+                "TEEVRA_DB_vg01-lvol16",
+                "TEEVRA_DB_vg01-lvol1",
+                "TEEVRA_DB_vg01-lvol10",
+                "TEEVRA_DB_vg01-lvol7",
+                "TEEVRA_DB_vg01-lvol5",
+                "TEEVRA_DB_vg01-lvol2"
+            ],
+            "host": "Serial Attached SCSI controller: VMware PVSCSI SCSI Controller (rev 02)",
+            "links": {
+                "ids": [
+                    "lvm-pv-uuid-GkNC3k-DY08-SO5W-EATe-5QKt-7agO-CRZ0DU"
+                ],
+                "labels": [],
+                "masters": [
+                    "dm-10",
+                    "dm-11",
+                    "dm-12",
+                    "dm-13",
+                    "dm-14",
+                    "dm-15",
+                    "dm-16",
+                    "dm-17",
+                    "dm-18",
+                    "dm-19",
+                    "dm-20",
+                    "dm-21",
+                    "dm-22",
+                    "dm-23",
+                    "dm-24",
+                    "dm-6",
+                    "dm-7",
+                    "dm-8",
+                    "dm-9"
+                ],
+                "uuids": []
+            },
+            "model": "Virtual disk",
+            "partitions": {},
+            "removable": "0",
+            "rotational": "1",
+            "sas_address": null,
+            "sas_device_handle": null,
+            "scheduler_mode": "mq-deadline",
+            "sectors": "3650722202",
+            "sectorsize": "512",
+            "size": "1.70 TB",
+            "support_discard": "1048576",
+            "vendor": "VMware",
+            "virtual": 1
+        }
+    },
+    "discovered_interpreter_python": "/usr/bin/python3",
+    "distribution": "RedHat",
+    "distribution_file_parsed": true,
+    "distribution_file_path": "/etc/redhat-release",
+    "distribution_file_search_string": "Red Hat",
+    "distribution_file_variety": "RedHat",
+    "distribution_major_version": "9",
+    "distribution_release": "Plow",
+    "distribution_version": "9.3",
+    "dns": {
+        "nameservers": [
+            "10.198.216.113"
+        ]
+    },
+    "domain": "",
+    "effective_group_id": 0,
+    "effective_user_id": 0,
+    "ens33": {
+        "active": true,
+        "device": "ens33",
+        "features": {
+            "esp_hw_offload": "off [fixed]",
+            "esp_tx_csum_hw_offload": "off [fixed]",
+            "fcoe_mtu": "off [fixed]",
+            "generic_receive_offload": "on",
+            "generic_segmentation_offload": "on",
+            "highdma": "on",
+            "hsr_dup_offload": "off [fixed]",
+            "hsr_fwd_offload": "off [fixed]",
+            "hsr_tag_ins_offload": "off [fixed]",
+            "hsr_tag_rm_offload": "off [fixed]",
+            "hw_tc_offload": "off [fixed]",
+            "l2_fwd_offload": "off [fixed]",
+            "large_receive_offload": "on",
+            "loopback": "off [fixed]",
+            "macsec_hw_offload": "off [fixed]",
+            "netns_local": "off [fixed]",
+            "ntuple_filters": "off [fixed]",
+            "receive_hashing": "on",
+            "rx_all": "off [fixed]",
+            "rx_checksumming": "on",
+            "rx_fcs": "off [fixed]",
+            "rx_gro_hw": "off [fixed]",
+            "rx_gro_list": "off",
+            "rx_udp_gro_forwarding": "off",
+            "rx_udp_tunnel_port_offload": "off [fixed]",
+            "rx_vlan_filter": "on [fixed]",
+            "rx_vlan_offload": "on",
+            "rx_vlan_stag_filter": "off [fixed]",
+            "rx_vlan_stag_hw_parse": "off [fixed]",
+            "scatter_gather": "on",
+            "tcp_segmentation_offload": "on",
+            "tls_hw_record": "off [fixed]",
+            "tls_hw_rx_offload": "off [fixed]",
+            "tls_hw_tx_offload": "off [fixed]",
+            "tx_checksum_fcoe_crc": "off [fixed]",
+            "tx_checksum_ip_generic": "on",
+            "tx_checksum_ipv4": "off [fixed]",
+            "tx_checksum_ipv6": "off [fixed]",
+            "tx_checksum_sctp": "off [fixed]",
+            "tx_checksumming": "on",
+            "tx_esp_segmentation": "off [fixed]",
+            "tx_fcoe_segmentation": "off [fixed]",
+            "tx_gre_csum_segmentation": "off [fixed]",
+            "tx_gre_segmentation": "off [fixed]",
+            "tx_gso_list": "off [fixed]",
+            "tx_gso_partial": "off [fixed]",
+            "tx_gso_robust": "off [fixed]",
+            "tx_ipxip4_segmentation": "off [fixed]",
+            "tx_ipxip6_segmentation": "off [fixed]",
+            "tx_lockless": "off [fixed]",
+            "tx_nocache_copy": "off",
+            "tx_scatter_gather": "on",
+            "tx_scatter_gather_fraglist": "off [fixed]",
+            "tx_sctp_segmentation": "off [fixed]",
+            "tx_tcp6_segmentation": "on",
+            "tx_tcp_ecn_segmentation": "off [fixed]",
+            "tx_tcp_mangleid_segmentation": "off",
+            "tx_tcp_segmentation": "on",
+            "tx_tunnel_remcsum_segmentation": "off [fixed]",
+            "tx_udp_segmentation": "off [fixed]",
+            "tx_udp_tnl_csum_segmentation": "on",
+            "tx_udp_tnl_segmentation": "on",
+            "tx_vlan_offload": "on",
+            "tx_vlan_stag_hw_insert": "off [fixed]",
+            "vlan_challenged": "off [fixed]"
+        },
+        "hw_timestamp_filters": [],
+        "ipv4": {
+            "address": "10.201.217.22",
+            "broadcast": "10.201.217.255",
+            "netmask": "255.255.255.0",
+            "network": "10.201.217.0",
+            "prefix": "24"
+        },
+        "ipv6": [
+            {
+                "address": "fe80::250:56ff:feb3:b244",
+                "prefix": "64",
+                "scope": "link"
+            }
+        ],
+        "macaddress": "00:50:56:b3:b2:44",
+        "module": "vmxnet3",
+        "mtu": 1500,
+        "pciid": "0000:02:01.0",
+        "promisc": false,
+        "speed": 10000,
+        "timestamping": [],
+        "type": "ether"
+    },
+    "env": {
+        "HOME": "/root",
+        "LANG": "en_IN.UTF-8",
+        "LOGNAME": "root",
+        "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:",
+        "MAIL": "/var/mail/root",
+        "PATH": "/sbin:/bin:/usr/sbin:/usr/bin",
+        "PWD": "/home/secadmin",
+        "SHELL": "/bin/bash",
+        "SHLVL": "0",
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-dvmcngnigkckagnuhnufqhefnjolygzy ; /usr/bin/python3 /home/secadmin/.ansible/tmp/ansible-tmp-1714639707.6454597-3403394-263223098784626/AnsiballZ_setup.py",
+        "SUDO_GID": "1000",
+        "SUDO_UID": "1000",
+        "SUDO_USER": "secadmin",
+        "TERM": "xterm",
+        "USER": "root",
+        "_": "/usr/bin/python3"
+    },
+    "fibre_channel_wwn": [],
+    "fips": false,
+    "form_factor": "Other",
+    "fqdn": "TEEVRADB",
+    "gather_subset": [
+        "all"
+    ],
+    "hostname": "TEEVRADB",
+    "hostnqn": "nqn.2014-08.org.nvmexpress:uuid:165e3342-556e-9781-1472-3a14bf71a8f1",
+    "interfaces": [
+        "ens33",
+        "lo"
+    ],
+    "is_chroot": false,
+    "iscsi_iqn": "",
+    "kernel": "5.14.0-362.24.1.el9_3.x86_64",
+    "kernel_version": "#1 SMP PREEMPT_DYNAMIC Thu Feb 15 07:18:13 EST 2024",
+    "lo": {
+        "active": true,
+        "device": "lo",
+        "features": {
+            "esp_hw_offload": "off [fixed]",
+            "esp_tx_csum_hw_offload": "off [fixed]",
+            "fcoe_mtu": "off [fixed]",
+            "generic_receive_offload": "on",
+            "generic_segmentation_offload": "on",
+            "highdma": "on [fixed]",
+            "hsr_dup_offload": "off [fixed]",
+            "hsr_fwd_offload": "off [fixed]",
+            "hsr_tag_ins_offload": "off [fixed]",
+            "hsr_tag_rm_offload": "off [fixed]",
+            "hw_tc_offload": "off [fixed]",
+            "l2_fwd_offload": "off [fixed]",
+            "large_receive_offload": "off [fixed]",
+            "loopback": "on [fixed]",
+            "macsec_hw_offload": "off [fixed]",
+            "netns_local": "on [fixed]",
+            "ntuple_filters": "off [fixed]",
+            "receive_hashing": "off [fixed]",
+            "rx_all": "off [fixed]",
+            "rx_checksumming": "on [fixed]",
+            "rx_fcs": "off [fixed]",
+            "rx_gro_hw": "off [fixed]",
+            "rx_gro_list": "off",
+            "rx_udp_gro_forwarding": "off",
+            "rx_udp_tunnel_port_offload": "off [fixed]",
+            "rx_vlan_filter": "off [fixed]",
+            "rx_vlan_offload": "off [fixed]",
+            "rx_vlan_stag_filter": "off [fixed]",
+            "rx_vlan_stag_hw_parse": "off [fixed]",
+            "scatter_gather": "on",
+            "tcp_segmentation_offload": "on",
+            "tls_hw_record": "off [fixed]",
+            "tls_hw_rx_offload": "off [fixed]",
+            "tls_hw_tx_offload": "off [fixed]",
+            "tx_checksum_fcoe_crc": "off [fixed]",
+            "tx_checksum_ip_generic": "on [fixed]",
+            "tx_checksum_ipv4": "off [fixed]",
+            "tx_checksum_ipv6": "off [fixed]",
+            "tx_checksum_sctp": "on [fixed]",
+            "tx_checksumming": "on",
+            "tx_esp_segmentation": "off [fixed]",
+            "tx_fcoe_segmentation": "off [fixed]",
+            "tx_gre_csum_segmentation": "off [fixed]",
+            "tx_gre_segmentation": "off [fixed]",
+            "tx_gso_list": "on",
+            "tx_gso_partial": "off [fixed]",
+            "tx_gso_robust": "off [fixed]",
+            "tx_ipxip4_segmentation": "off [fixed]",
+            "tx_ipxip6_segmentation": "off [fixed]",
+            "tx_lockless": "on [fixed]",
+            "tx_nocache_copy": "off [fixed]",
+            "tx_scatter_gather": "on [fixed]",
+            "tx_scatter_gather_fraglist": "on [fixed]",
+            "tx_sctp_segmentation": "on",
+            "tx_tcp6_segmentation": "on",
+            "tx_tcp_ecn_segmentation": "on",
+            "tx_tcp_mangleid_segmentation": "on",
+            "tx_tcp_segmentation": "on",
+            "tx_tunnel_remcsum_segmentation": "off [fixed]",
+            "tx_udp_segmentation": "on",
+            "tx_udp_tnl_csum_segmentation": "off [fixed]",
+            "tx_udp_tnl_segmentation": "off [fixed]",
+            "tx_vlan_offload": "off [fixed]",
+            "tx_vlan_stag_hw_insert": "off [fixed]",
+            "vlan_challenged": "on [fixed]"
+        },
+        "hw_timestamp_filters": [],
+        "ipv4": {
+            "address": "127.0.0.1",
+            "broadcast": "",
+            "netmask": "255.0.0.0",
+            "network": "127.0.0.0",
+            "prefix": "8"
+        },
+        "ipv6": [
+            {
+                "address": "::1",
+                "prefix": "128",
+                "scope": "host"
+            }
+        ],
+        "mtu": 65536,
+        "promisc": false,
+        "timestamping": [],
+        "type": "loopback"
+    },
+    "loadavg": {
+        "15m": 6.35,
+        "1m": 6.89,
+        "5m": 6.56
+    },
+    "lsb": {},
+    "lvm": {
+        "lvs": {
+            "home": {
+                "size_g": "72.00",
+                "vg": "rhel"
+            },
+            "lvol1": {
+                "size_g": "200.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol10": {
+                "size_g": "100.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol11": {
+                "size_g": "100.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol12": {
+                "size_g": "138.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol13": {
+                "size_g": "75.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol14": {
+                "size_g": "5.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol15": {
+                "size_g": "5.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol16": {
+                "size_g": "5.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol17": {
+                "size_g": "5.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol18": {
+                "size_g": "5.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol19": {
+                "size_g": "5.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol2": {
+                "size_g": "175.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol3": {
+                "size_g": "150.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol4": {
+                "size_g": "150.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol5": {
+                "size_g": "158.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol6": {
+                "size_g": "100.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol7": {
+                "size_g": "100.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol8": {
+                "size_g": "100.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "lvol9": {
+                "size_g": "100.00",
+                "vg": "TEEVRA_DB_vg01"
+            },
+            "root": {
+                "size_g": "50.00",
+                "vg": "rhel"
+            },
+            "soft": {
+                "size_g": "20.00",
+                "vg": "rhel"
+            },
+            "swap": {
+                "size_g": "16.00",
+                "vg": "rhel"
+            },
+            "tmp": {
+                "size_g": "20.00",
+                "vg": "rhel"
+            },
+            "usr": {
+                "size_g": "20.00",
+                "vg": "rhel"
+            }
+        },
+        "pvs": {
+            "/dev/sda3": {
+                "free_g": "0.00",
+                "size_g": "198.00",
+                "vg": "rhel"
+            },
+            "/dev/sdb": {
+                "free_g": "64.80",
+                "size_g": "1740.80",
+                "vg": "TEEVRA_DB_vg01"
+            }
+        },
+        "vgs": {
+            "TEEVRA_DB_vg01": {
+                "free_g": "64.80",
+                "num_lvs": "19",
+                "num_pvs": "1",
+                "size_g": "1740.80"
+            },
+            "rhel": {
+                "free_g": "0.00",
+                "num_lvs": "6",
+                "num_pvs": "1",
+                "size_g": "198.00"
+            }
+        }
+    },
+    "machine": "x86_64",
+    "machine_id": "4f23e8ca8b624afdb0b3330f36c4b2c7",
+    "memfree_mb": 2930,
+    "memory_mb": {
+        "nocache": {
+            "free": 22704,
+            "used": 9133
+        },
+        "real": {
+            "free": 2930,
+            "total": 31837,
+            "used": 28907
+        },
+        "swap": {
+            "cached": 216,
+            "free": 12803,
+            "total": 16383,
+            "used": 3580
+        }
+    },
+    "memtotal_mb": 31837,
+    "module_setup": true,
+    "mounts": [
+        {
+            "block_available": 9379154,
+            "block_size": 4096,
+            "block_total": 13100800,
+            "block_used": 3721646,
+            "device": "/dev/mapper/rhel-root",
+            "fstype": "xfs",
+            "inode_available": 26201486,
+            "inode_total": 26214400,
+            "inode_used": 12914,
+            "mount": "/",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 38417014784,
+            "size_total": 53660876800,
+            "uuid": "5fc3cedf-6f08-414f-8e25-1453e52e0901"
+        },
+        {
+            "block_available": 3783123,
+            "block_size": 4096,
+            "block_total": 5240320,
+            "block_used": 1457197,
+            "device": "/dev/mapper/rhel-usr",
+            "fstype": "xfs",
+            "inode_available": 10336682,
+            "inode_total": 10485760,
+            "inode_used": 149078,
+            "mount": "/usr",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 15495671808,
+            "size_total": 21464350720,
+            "uuid": "176c0a06-54df-49c4-8d11-0fbbe8feb8e0"
+        },
+        {
+            "block_available": 5195522,
+            "block_size": 4096,
+            "block_total": 5240320,
+            "block_used": 44798,
+            "device": "/dev/mapper/rhel-soft",
+            "fstype": "xfs",
+            "inode_available": 10485757,
+            "inode_total": 10485760,
+            "inode_used": 3,
+            "mount": "/soft",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 21280858112,
+            "size_total": 21464350720,
+            "uuid": "a991ba90-70bc-431f-929c-0b824a22782d"
+        },
+        {
+            "block_available": 19499188,
+            "block_size": 4096,
+            "block_total": 19644416,
+            "block_used": 145228,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol13",
+            "fstype": "xfs",
+            "inode_available": 39321597,
+            "inode_total": 39321600,
+            "inode_used": 3,
+            "mount": "/oracle_home",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 79868674048,
+            "size_total": 80463527936,
+            "uuid": "72e47ac4-ce78-484f-a215-f0135899d592"
+        },
+        {
+            "block_available": 26007102,
+            "block_size": 4096,
+            "block_total": 26198016,
+            "block_used": 190914,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol8",
+            "fstype": "xfs",
+            "inode_available": 52428797,
+            "inode_total": 52428800,
+            "inode_used": 3,
+            "mount": "/index_3",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 106525089792,
+            "size_total": 107307073536,
+            "uuid": "d49af246-d827-43f6-a444-9223fd56d686"
+        },
+        {
+            "block_available": 139698,
+            "block_size": 4096,
+            "block_total": 259584,
+            "block_used": 119886,
+            "device": "/dev/sda2",
+            "fstype": "xfs",
+            "inode_available": 524250,
+            "inode_total": 524288,
+            "inode_used": 38,
+            "mount": "/boot",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 572203008,
+            "size_total": 1063256064,
+            "uuid": "bb137a24-767d-46d2-b78b-351970560430"
+        },
+        {
+            "block_available": 5700698,
+            "block_size": 4096,
+            "block_total": 18865152,
+            "block_used": 13164454,
+            "device": "/dev/mapper/rhel-home",
+            "fstype": "xfs",
+            "inode_available": 37565924,
+            "inode_total": 37748736,
+            "inode_used": 182812,
+            "mount": "/home",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 23350059008,
+            "size_total": 77271662592,
+            "uuid": "381929d2-a62c-44c9-9966-f4ff3a3bc531"
+        },
+        {
+            "block_available": 26007102,
+            "block_size": 4096,
+            "block_total": 26198016,
+            "block_used": 190914,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol6",
+            "fstype": "xfs",
+            "inode_available": 52428797,
+            "inode_total": 52428800,
+            "inode_used": 3,
+            "mount": "/index_1",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 106525089792,
+            "size_total": 107307073536,
+            "uuid": "b2219dea-5ac0-45d8-85db-21d515d438c0"
+        },
+        {
+            "block_available": 1277047,
+            "block_size": 4096,
+            "block_total": 1294336,
+            "block_used": 17289,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol18",
+            "fstype": "xfs",
+            "inode_available": 2621437,
+            "inode_total": 2621440,
+            "inode_used": 3,
+            "mount": "/redo5",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 5230784512,
+            "size_total": 5301600256,
+            "uuid": "48e19a7b-1f32-4ed4-846c-3ac5f6020c36"
+        },
+        {
+            "block_available": 26007102,
+            "block_size": 4096,
+            "block_total": 26198016,
+            "block_used": 190914,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol11",
+            "fstype": "xfs",
+            "inode_available": 52428797,
+            "inode_total": 52428800,
+            "inode_used": 3,
+            "mount": "/undo1",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 106525089792,
+            "size_total": 107307073536,
+            "uuid": "ba21bd8d-58f0-4cdf-b480-89860900cfeb"
+        },
+        {
+            "block_available": 12467808,
+            "block_size": 4096,
+            "block_total": 45852800,
+            "block_used": 33384992,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol2",
+            "fstype": "xfs",
+            "inode_available": 91750386,
+            "inode_total": 91750400,
+            "inode_used": 14,
+            "mount": "/data2",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 51068141568,
+            "size_total": 187813068800,
+            "uuid": "69f1be59-c844-4254-8b63-6a09b3c12a37"
+        },
+        {
+            "block_available": 39020119,
+            "block_size": 4096,
+            "block_total": 39302400,
+            "block_used": 282281,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol3",
+            "fstype": "xfs",
+            "inode_available": 78643197,
+            "inode_total": 78643200,
+            "inode_used": 3,
+            "mount": "/data3",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 159826407424,
+            "size_total": 160982630400,
+            "uuid": "10452518-8fe2-4689-a9d2-9f7ab91bdeee"
+        },
+        {
+            "block_available": 26007102,
+            "block_size": 4096,
+            "block_total": 26198016,
+            "block_used": 190914,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol7",
+            "fstype": "xfs",
+            "inode_available": 52428797,
+            "inode_total": 52428800,
+            "inode_used": 3,
+            "mount": "/index_2",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 106525089792,
+            "size_total": 107307073536,
+            "uuid": "f8008282-83ea-4d37-9d4c-d34b7deb78b5"
+        },
+        {
+            "block_available": 1277047,
+            "block_size": 4096,
+            "block_total": 1294336,
+            "block_used": 17289,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol15",
+            "fstype": "xfs",
+            "inode_available": 2621437,
+            "inode_total": 2621440,
+            "inode_used": 3,
+            "mount": "/redo2",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 5230784512,
+            "size_total": 5301600256,
+            "uuid": "8f464295-165b-449a-87c2-c5ab9396cf58"
+        },
+        {
+            "block_available": 26007102,
+            "block_size": 4096,
+            "block_total": 26198016,
+            "block_used": 190914,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol10",
+            "fstype": "xfs",
+            "inode_available": 52428797,
+            "inode_total": 52428800,
+            "inode_used": 3,
+            "mount": "/data5",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 106525089792,
+            "size_total": 107307073536,
+            "uuid": "f6635d22-dce1-4c47-859d-5120fac1264c"
+        },
+        {
+            "block_available": 26007102,
+            "block_size": 4096,
+            "block_total": 26198016,
+            "block_used": 190914,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol9",
+            "fstype": "xfs",
+            "inode_available": 52428797,
+            "inode_total": 52428800,
+            "inode_used": 3,
+            "mount": "/index_4",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 106525089792,
+            "size_total": 107307073536,
+            "uuid": "21a0621a-6710-45fa-8bae-4572ad208a03"
+        },
+        {
+            "block_available": 151504,
+            "block_size": 4096,
+            "block_total": 153290,
+            "block_used": 1786,
+            "device": "/dev/sda1",
+            "fstype": "vfat",
+            "inode_available": 0,
+            "inode_total": 0,
+            "inode_used": 0,
+            "mount": "/boot/efi",
+            "options": "rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro",
+            "size_available": 620560384,
+            "size_total": 627875840,
+            "uuid": "9EBD-2C9E"
+        },
+        {
+            "block_available": 1277047,
+            "block_size": 4096,
+            "block_total": 1294336,
+            "block_used": 17289,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol16",
+            "fstype": "xfs",
+            "inode_available": 2621437,
+            "inode_total": 2621440,
+            "inode_used": 3,
+            "mount": "/redo3",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 5230784512,
+            "size_total": 5301600256,
+            "uuid": "6ef6a341-d532-4621-99da-d2817dd8386c"
+        },
+        {
+            "block_available": 35897848,
+            "block_size": 4096,
+            "block_total": 36158208,
+            "block_used": 260360,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol12",
+            "fstype": "xfs",
+            "inode_available": 72351741,
+            "inode_total": 72351744,
+            "inode_used": 3,
+            "mount": "/temp_d",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 147037585408,
+            "size_total": 148104019968,
+            "uuid": "2ff50fc3-1c66-436c-9f9a-e65485ab2bda"
+        },
+        {
+            "block_available": 1277047,
+            "block_size": 4096,
+            "block_total": 1294336,
+            "block_used": 17289,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol17",
+            "fstype": "xfs",
+            "inode_available": 2621437,
+            "inode_total": 2621440,
+            "inode_used": 3,
+            "mount": "/redo4",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 5230784512,
+            "size_total": 5301600256,
+            "uuid": "20a5948e-c124-4c7c-bbfb-336983008b8a"
+        },
+        {
+            "block_available": 1277047,
+            "block_size": 4096,
+            "block_total": 1294336,
+            "block_used": 17289,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol19",
+            "fstype": "xfs",
+            "inode_available": 2621437,
+            "inode_total": 2621440,
+            "inode_used": 3,
+            "mount": "/redo6",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 5230784512,
+            "size_total": 5301600256,
+            "uuid": "2ada461c-ea7b-4f24-925d-f48e50d40446"
+        },
+        {
+            "block_available": 39020119,
+            "block_size": 4096,
+            "block_total": 39302400,
+            "block_used": 282281,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol4",
+            "fstype": "xfs",
+            "inode_available": 78643197,
+            "inode_total": 78643200,
+            "inode_used": 3,
+            "mount": "/data4",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 159826407424,
+            "size_total": 160982630400,
+            "uuid": "6326272a-cb0f-462d-ba72-26265b98af3b"
+        },
+        {
+            "block_available": 1277047,
+            "block_size": 4096,
+            "block_total": 1294336,
+            "block_used": 17289,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol14",
+            "fstype": "xfs",
+            "inode_available": 2621437,
+            "inode_total": 2621440,
+            "inode_used": 3,
+            "mount": "/redo1",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 5230784512,
+            "size_total": 5301600256,
+            "uuid": "552a9d35-1805-4c9c-8107-96f0c028ad7a"
+        },
+        {
+            "block_available": 39322431,
+            "block_size": 4096,
+            "block_total": 41398528,
+            "block_used": 2076097,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol5",
+            "fstype": "xfs",
+            "inode_available": 82837500,
+            "inode_total": 82837504,
+            "inode_used": 4,
+            "mount": "/arch",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 161064677376,
+            "size_total": 169568370688,
+            "uuid": "467c9978-5ca4-411f-a171-ca23da254fc6"
+        },
+        {
+            "block_available": 39929973,
+            "block_size": 4096,
+            "block_total": 52403200,
+            "block_used": 12473227,
+            "device": "/dev/mapper/TEEVRA_DB_vg01-lvol1",
+            "fstype": "xfs",
+            "inode_available": 104857173,
+            "inode_total": 104857600,
+            "inode_used": 427,
+            "mount": "/data1",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 163553169408,
+            "size_total": 214643507200,
+            "uuid": "ea10c9c2-ac69-4eab-8c82-078f0d139942"
+        },
+        {
+            "block_available": 4706193,
+            "block_size": 4096,
+            "block_total": 5240320,
+            "block_used": 534127,
+            "device": "/dev/mapper/rhel-tmp",
+            "fstype": "xfs",
+            "inode_available": 10485414,
+            "inode_total": 10485760,
+            "inode_used": 346,
+            "mount": "/tmp",
+            "options": "rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota",
+            "size_available": 19276566528,
+            "size_total": 21464350720,
+            "uuid": "e8ff7107-a250-4635-95fa-2212de0dccfd"
+        },
+        {
+            "block_available": 0,
+            "block_size": 2048,
+            "block_total": 349117,
+            "block_used": 349117,
+            "device": "/dev/loop0",
+            "fstype": "iso9660",
+            "inode_available": 0,
+            "inode_total": 0,
+            "inode_used": 0,
+            "mount": "/EMS",
+            "options": "ro,relatime,nojoliet,check=s,map=n,blocksize=2048",
+            "size_available": 0,
+            "size_total": 714991616,
+            "uuid": "2020-10-13-05-05-58-00"
+        }
+    ],
+    "nodename": "TEEVRADB",
+    "os_family": "RedHat",
+    "pkg_mgr": "dnf",
+    "proc_cmdline": {
+        "BOOT_IMAGE": "(hd0,gpt2)/vmlinuz-5.14.0-362.24.1.el9_3.x86_64",
+        "crashkernel": "1G-4G:192M,4G-64G:256M,64G-:512M",
+        "quiet": true,
+        "rd.lvm.lv": [
+            "rhel/root",
+            "rhel/swap",
+            "rhel/usr"
+        ],
+        "resume": "/dev/mapper/rhel-swap",
+        "rhgb": true,
+        "ro": true,
+        "root": "/dev/mapper/rhel-root"
+    },
+    "processor": [
+        "0",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "1",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "2",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "3",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "4",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "5",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "6",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "7",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "8",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "9",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "10",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "11",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "12",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "13",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "14",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz",
+        "15",
+        "GenuineIntel",
+        "Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz"
+    ],
+    "processor_cores": 16,
+    "processor_count": 1,
+    "processor_nproc": 16,
+    "processor_threads_per_core": 1,
+    "processor_vcpus": 16,
+    "product_name": "VMware20,1",
+    "product_serial": "VMware-42 33 5e 16 6e 55 81 97-14 72 3a 14 bf 71 a8 f1",
+    "product_uuid": "165e3342-556e-9781-1472-3a14bf71a8f1",
+    "product_version": "None",
+    "python": {
+        "executable": "/usr/bin/python3",
+        "has_sslcontext": true,
+        "type": "cpython",
+        "version": {
+            "major": 3,
+            "micro": 18,
+            "minor": 9,
+            "releaselevel": "final",
+            "serial": 0
+        },
+        "version_info": [
+            3,
+            9,
+            18,
+            "final",
+            0
+        ]
+    },
+    "python_version": "3.9.18",
+    "real_group_id": 0,
+    "real_user_id": 0,
+    "selinux": {
+        "status": "disabled"
+    },
+    "selinux_python_present": true,
+    "service_mgr": "systemd",
+    "ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFq5D23JUiGP37HT+YDjo60GoexDS2/g1wmhniuA9mJrVUEBmwrDXAHeaLFI/1ZDMks8zixWTpc+YnBMUt4CYsc=",
+    "ssh_host_key_ecdsa_public_keytype": "ecdsa-sha2-nistp256",
+    "ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIF9Lb/WWxExKEw0H5xg2Q6PZ/s+qJuXVVsBafaMh4fk4",
+    "ssh_host_key_ed25519_public_keytype": "ssh-ed25519",
+    "ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDbljW+9Mzlwtb+daknTNDwtvkHvAZ8BXn7DPEvVxNakbq0RR41KDMeSFgETi60QBH5bq/NOXP2CTRn/yqsHB+PCE56uVvBIMLx1X/coYtjGTXXLVsViGdoD/Ql89uUumfbp24bGIDgqc8bS618bREynrIZmcTdDPbxwoxzwWvTD7wTdikitOdfsICSNOKMgDAya03sfuW1Ds19xeEBgrnSdudjtDvQseuTSUmM7FVWzeMf+7vSD75Wwpv+E/JlusB8eQNeChyBhP5ETFqlHOM5pxs8/DDy0QZfSzFKdLFyyQM9u2N0W+zzU5cbVFs17HxRFqY5F6TRW7Odp/t+dgnPF0CnLLyhpjJQVniiuclcwWshekYbGwzYB1JJKJnNu72IdxFcQuOveQaMMDlSIl+45m+g6gZ36q/v2PJsMdiYYtCl4J4jCos50SZSjViC33a5nM4gUaRPiLY47XbgwNCxF0rthDBN/XSEBRwAPMI7n1Lv8HZxiCFWrtQ7K7JwjGU=",
+    "ssh_host_key_rsa_public_keytype": "ssh-rsa",
+    "swapfree_mb": 12803,
+    "swaptotal_mb": 16383,
+    "system": "Linux",
+    "system_capabilities": [],
+    "system_capabilities_enforced": "False",
+    "system_vendor": "VMware, Inc.",
+    "uptime_seconds": 4066214,
+    "user_dir": "/root",
+    "user_gecos": "root",
+    "user_gid": 0,
+    "user_id": "root",
+    "user_shell": "/bin/bash",
+    "user_uid": 0,
+    "userspace_architecture": "x86_64",
+    "userspace_bits": "64",
+    "virtualization_role": "guest",
+    "virtualization_tech_guest": [
+        "VMware"
+    ],
+    "virtualization_tech_host": [],
+    "virtualization_type": "VMware"
+}

@@ -1,0 +1,216 @@
+---
+- name: display and moving hostname and ip
+  hosts: 10.201.220.6
+  become: true
+  remote_user: secadmin
+  tasks:
+    - name: displaying hostname and ip
+      setup:
+      register: RES
+    - debug: var=RES
+    - name: moving ip data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'ip_address: "{{ RES.ansible_facts.ansible_default_ipv4.address }}"'
+          create: yes
+      delegate_to: localhost
+    - name: moving full hostname data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'FQDN: "{{ RES.ansible_facts.ansible_fqdn }}"'
+      delegate_to: localhost
+
+    - name: moving hostname data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'hostname: "{{ RES.ansible_facts.ansible_hostname }}"'
+      delegate_to: localhost
+
+    - name: moving interface details to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'interface: "{{ RES.ansible_facts.ansible_default_ipv4.interface }}"'
+      delegate_to: localhost
+
+    - name: moving netmask  data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'netmask: "{{ RES.ansible_facts.ansible_default_ipv4.netmask }}"'
+      delegate_to: localhost
+
+    - name: moving gateway  data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'gateway: "{{ RES.ansible_facts.ansible_default_ipv4.gateway }}"'
+      delegate_to: localhost
+
+    - name: moving system_architecture  data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'system_architecture: "{{ RES.ansible_facts.ansible_architecture }}"'
+      delegate_to: localhost
+
+    - name: moving bios date  data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'bios_date: "{{ RES.ansible_facts.ansible_bios_date }}"'
+      delegate_to: localhost
+
+    - name: moving bios versio data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'bios_version: "{{ RES.ansible_facts.ansible_bios_version }}"'
+      delegate_to: localhost
+
+    - name: moving boot image path data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'boot image path: "{{ RES.ansible_facts.ansible_cmdline.BOOT_IMAGE }}"'
+      delegate_to: localhost
+
+    - name: moving distribution data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'distribution: "{{ RES.ansible_facts.ansible_distribution }}"'
+      delegate_to: localhost
+
+    - name: moving distribution version data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'distribution_version: "{{ RES.ansible_facts.ansible_distribution_version }}"'
+      delegate_to: localhost
+
+    - name: moving network connected device name data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'ntwk_con_dev_name: "{{ RES.ansible_facts.ansible_ens192.device }}"'
+      delegate_to: localhost
+
+    - name: moving network connected device  ctive statusdata to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'active: "{{ RES.ansible_facts.ansible_ens192.active }}"'
+      delegate_to: localhost
+
+    - name: moving mac address data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'macaddress: "{{ RES.ansible_facts.ansible_ens192.macaddress }}"'
+      delegate_to: localhost
+
+    - name: moving  data wwn data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'wwn: "{{ RES.ansible_facts.ansible_fibre_channel_wwn }}"'
+      delegate_to: localhost
+
+    - name: kernal name data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'kernal name: "{{ RES.ansible_facts.ansible_kernel }}"'
+      delegate_to: localhost
+
+    - name: boot image data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'boot image: "{{ RES.ansible_facts.ansible_proc_cmdline.BOOT_IMAGE }}"'
+      delegate_to: localhost
+
+    - name: processor core data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'processor cores: "{{ RES.ansible_facts.ansible_processor_cores }}"'
+      delegate_to: localhost
+
+    - name: processor count data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'processor count: "{{ RES.ansible_facts.ansible_processor_count }}"'
+      delegate_to: localhost
+
+    - name: threads per core data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'processor threads per core: "{{ RES.ansible_facts.ansible_processor_threads_per_core }}"'
+      delegate_to: localhost
+
+    - name: no of vcpus data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'no of vcpus: "{{ RES.ansible_facts.ansible_processor_vcpus }}"'
+      delegate_to: localhost
+
+    - name: system serial no data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'system serial no: "{{ RES.ansible_facts.ansible_product_serial }}"'
+      delegate_to: localhost
+
+    - name: system uuid no data to local path
+      lineinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'uuid: "{{ RES.ansible_facts.ansible_product_uuid }}"'
+      delegate_to: localhost
+
+    - name: tot interfaces data to local path
+      blockinfile:
+          path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          marker: COMMENT Ansible Managed block1
+          block: 'total_interfaces: "{{ RES.ansible_facts.ansible_interfaces }}"'
+      delegate_to: localhost
+
+    - name: Taking server parameters and command output
+      shell: |
+             echo -e '\nCMD:date';date +"%d-%m-%Y_%H:%M"
+             echo -e '\nCMD:uptime';uptime| cut -d " " -f4,5
+             echo -e '\nCMD:uname -a';uname -a
+             echo -e '\nCMD:/sbin/ifconfig -a';/sbin/ifconfig -a
+             echo -e '\nCMD:ip link show';ip link show
+             echo -e '\nCMD:netstat -rn';netstat -rn
+             echo -e '\nCMD:vgdisplay';vgdisplay
+             echo -e '\nCMD:pvdisplay';pvdisplay
+             echo -e '\nCMD:lvdisplay';lvdisplay
+             echo -e '\nCMD:df -hT';df -hT
+             echo -e '\nCMD:cat /etc/os-release';cat /etc/os-release
+             echo -e '\nCMD:cat /etc/redhat-release';cat /etc/redhat-release
+             echo -e '\nCMD:chronyc sources';chronyc sources
+             echo -e '\nCMD:uname-r';uname -r
+             echo -e '\nCMD:ip a';ip a
+             echo -e '\nCMD:check ssh permit root login';cat -n /etc/ssh/sshd_config|grep -i PermitRootLogin
+             echo -e '\nCMD:netstat -tulnp';netstat -tulnp
+             echo -e '\nCMD:free -m';free -m
+             echo -e '\nCMD:lscpu';lscpu
+             echo -e '\nCMD:fdisk -l';fdisk -l
+             echo -e '\nCMD:cat /etc/passwd';cat /etc/passwd
+             echo -e '\nCMD:cat /etc/fstab';cat /etc/fstab
+             echo -e '\nCMD:cat /proc/mounts';cat /proc/mounts
+             echo -e '\nCMD:cat /etc/exports';cat /etc/exports
+             echo -e '\nCMD:lvs';lvs
+             echo -e '\nCMD:vgs';vgs
+             echo -e '\nCMD:pvs';pvs
+             echo -e '\nCMD:uname -r';uname -r
+             echo -e '\nCMD:cat /etc/lvm/lvm.conf for auto activation';cat /etc/lvm/lvm.conf | grep -i auto_activation_volume_list
+             echo -e '\nCMD:dmidecode -s system-manufacturer';dmidecode -s system-manufacturer
+             echo -e '\nCMD:dmidecode | grep -i vm';dmidecode | grep -i vm
+             echo -e '\nCMD:rpm -qa --last | grep -i KEXEC-Tool*';rpm -qa --last | grep -i KEXEC-Tool
+             echo -e '\nCMD:cat /proc/sys/kernel/tainted';cat /proc/sys/kernel/tainted
+             echo -e '\nCMD:cat /boot/grub2/grub.cfg';cat /boot/grub2/grub.cfg
+             echo -e '\nCMD:cat /etc/default/grub';cat /etc/default/grub
+             echo -e '\nCMD:cat /etc/resolv.conf';cat /etc/resolv.conf
+             echo -e '\nCMD:cat /etc/sysctl.conf';cat /etc/sysctl.conf
+             echo -e '\nCMD:ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head';ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head
+             echo -e '\nCMD:ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head';ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+             echo -e '\nCMD:ps -eo pid,ppid,cmd,%mem,%cpu';ps -eo pid,ppid,cmd,%mem,%cpu
+             echo -e '\nCMD:cat /etc/hosts';cat /etc/hosts
+             echo -e '\nCMD:systemctl status chronyd';systemctl status chronyd
+             echo -e '\nCMD:pcs status';pcs status
+             echo -e '\nCMD:systemctl status firewalld';systemctl status firewalld
+             echo -e '\nCMD:getenforce';getenforce
+      register: COMM
+    - name: moving data to COMM variable
+      debug: var=COMM
+    - name: moving data to local path
+      lineinfile:
+        path: /ansout1/pmreports/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+        line: "{{ COMM.stdout }}"
+      delegate_to: localhost

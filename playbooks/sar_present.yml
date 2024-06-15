@@ -1,6 +1,6 @@
 ---
 - name: Check and Install sar package
-  hosts: WORKING
+  hosts: REACHABLE
   tasks:
     - name: sar package present
       yum: 

@@ -1,0 +1,14 @@
+---
+- name: MariaDB server is installed
+  hosts: LOCAL
+  become: yes
+  vars:
+    db_pkgs: 
+      - mariadb-server
+      - python3-PyMySQL
+      - postgresql-server
+    db_serv: mariadb
+    resource : /home/secadmin/index.html
+
+  handlers:
+

@@ -1,0 +1,43 @@
+---
+- name: display and moving hostname and ip
+  hosts: local
+  become: true
+  remote_user: secadmin
+  tasks:
+    - name: displaying hostname and ip
+      setup:
+      register: RES
+    - debug: var=RES
+    
+    - name: moving  data wwn data to local path
+      lineinfile:
+          path: /ansout1/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+          line: 'wwn: "{{ RES.ansible_facts.ansible_fibre_channel_wwn }}"'
+          create: yes
+      delegate_to: localhost
+
+    - name: Taking server parameters and command output
+      shell: |
+             echo -e '\nCMD:ip link show';ip link show
+             echo -e '\nCMD:vgdisplay';vgdisplay
+             echo -e '\nCMD:pvdisplay';pvdisplay
+             echo -e '\nCMD:lvdisplay';lvdisplay
+             echo -e '\nCMD:ip a';ip a
+             echo -e '\nCMD:check ssh permit root login';cat -n /etc/ssh/sshd_config|grep -i PermitRootLogin
+             echo -e '\nCMD:fdisk -l';fdisk -l
+             echo -e '\nCMD:cat /etc/exports';cat /etc/exports
+             echo -e '\nCMD:lvs';lvs
+             echo -e '\nCMD:vgs';vgs
+             echo -e '\nCMD:pvs';pvs
+             echo -e '\nCMD:dmidecode -s system-manufacturer';dmidecode -s system-manufacturer
+             echo -e '\nCMD:dmidecode | grep -i vm';dmidecode | grep -i vm
+             echo -e '\nCMD:cat /boot/grub2/grub.cfg';cat /boot/grub2/grub.cfg
+             echo -e '\nCMD:cat /etc/sysctl.conf';cat /etc/sysctl.conf
+      register: COMM
+    - name: moving data to COMM variable
+      debug: var=COMM
+    - name: moving data to local path
+      lineinfile:
+        path: /ansout1/{{ RES.ansible_facts.ansible_hostname }}_{{ RES.ansible_facts.ansible_date_time.date }}_{{ RES.ansible_facts.ansible_date_time.time }}_data.txt
+        line: "{{ COMM.stdout }}"
+      delegate_to: localhost

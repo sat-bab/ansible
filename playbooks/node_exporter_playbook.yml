@@ -1,0 +1,62 @@
+---
+- name: Node Exporter Configuration in Clients
+  hosts: TEMP
+  become: yes
+
+  tasks:
+    - name: Create node_exporter user
+      user:
+        name: node_exporter
+        shell: /bin/false
+        state: present
+
+    - name: Copy node_exporter application file
+      copy:
+        src: /app/opt/node_exporter-1.7.0.linux-amd64/node_exporter
+        dest: /usr/local/bin/node_exporter
+        owner: root
+        group: root
+        mode: 0755
+
+    - name: create node_exporter config file
+      file:
+        path: /etc/systemd/system/node_exporter.service
+        state: touch
+        owner: root
+        group: root
+
+    - name: Add content to node_exporter file
+      blockinfile:
+        path: /etc/systemd/system/node_exporter.service
+        block: |
+          [Unit]
+          Description=Node Exporter
+          After=network.target
+
+          [Service]
+          User=node_exporter
+          Group=node_exporter
+          Type=simple
+          ExecStart=/usr/local/bin/node_exporter
+
+          [Install]
+          WantedBy=multi-user.target
+        marker: "# {mark} ANSIBLE MANAGED BLOCK"
+        owner: root
+        group: root
+
+    - name: Reload daemon
+      systemd:
+        daemon_reload: yes
+
+    - name: Start service
+      service:
+        name: node_exporter
+        state: started
+        enabled: yes
+
+    - name: Enable service
+      service:
+        name: node_exporter
+        enabled: yes
+
